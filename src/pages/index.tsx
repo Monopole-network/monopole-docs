@@ -27,7 +27,7 @@ import SearchBarWithAnalytics from '../theme/SearchBar'
 
 export const actions = [
   {
-    title: 'What is Uniswap',
+    title: 'What is Monopole',
     href: '#',
     icon: InformationCircleIcon,
     to: './concepts/overview',
@@ -312,7 +312,7 @@ const HideMedium = styled.div`
 
 export default function Home() {
   return (
-    <Layout title={`Uniswap Docs`} description="Technical Documentation For The Uniswap Protocol">
+    <Layout title={`Monopole Docs`} description="Technical Documentation For The Monopole Protocol">
       <Container>
         <DocsHeader>
           <div
@@ -324,7 +324,7 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <h1 style={{ fontWeight: 600 }}> Welcome to the Uniswap Docs</h1>
+            <h1 style={{ fontWeight: 600 }}> Welcome to the Monopole Docs</h1>
             <HideMedium>
               <SearchBarWithAnalytics />
             </HideMedium>
