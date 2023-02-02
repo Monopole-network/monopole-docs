@@ -1,0 +1,46 @@
+.hero {
+  display: flex;
+  padding: 4rem 0;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  position: relative;
+  background: #fffafd;
+  min-height: 100vh;
+}
+
+.heroFirst {
+  padding: 6rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.getStartedButton {
+  height: 44px;
+  font-size: 1rem;
+  border-radius: 16px;
+  margin-right: 0.6rem;
+}
+
+.getGithubButton {
+  height: 44px;
+  font-size: 1rem;
+  border-radius: 16px;
+}
+
+.githubIcon {
+  vertical-align: middle;
+  width: 1rem;
+}
+
+.githubButtonText {
+  vertical-align: middle;
+}
+
+.logo {
+  width: 25rem;
+  height: 25rem;
+}

@@ -1,8 +1,6 @@
-**/.git
-**/.svn
-**/.hg
-**/node_modules
-**/.git
-**/.svn
-**/.hg
-*.mdx
+.docusaurus
+.github
+build
+docs
+static
+versioned_docs

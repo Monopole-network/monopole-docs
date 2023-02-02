@@ -1,309 +1,167 @@
-const math = require('remark-math')
-const katex = require('rehype-katex')
-require('dotenv').config()
+const lightCodeTheme = require("prism-react-renderer/themes/github");
 
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  customFields: {
-    // Analytics proxy URL
-    analyticsProxyUrl: process.env.REACT_APP_AMPLITUDE_PROXY_URL,
-    // Determines if staging env
-    stagingEnv: process.env.REACT_APP_STAGING,
-    // From node
-    nodeEnv: process.env.NODE_ENV,
-  },
-  title: 'Uniswap',
-  tagline: 'Documentation and Guides',
-  url: 'https://docs.uniswap.org/',
-  baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'ignore',
-  favicon: 'img/favicon.png',
-  organizationName: 'Uniswap', // Usually your GitHub org/user name.
-  projectName: 'Uniswap-docs', // Usually your repo name.
+  title: "Monopole",
+  tagline:
+    "The first global solution matching investors and projects for Impact Leveraging Blockchain technology with full transparency and decentralization",
+  trailingSlash: false,
+  url: "https://docs.monopole.network",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "monopole-network",
+  projectName: "monopole-docs",
   themeConfig: {
-    image: 'img/twitter_card_bg.jpg',
-    prism: {
-      additionalLanguages: ['solidity'],
-    },
     algolia: {
-      apiKey: '32465e2ab6f7554ff014e64c0d92171c',
-      indexName: 'v3-docs',
-      appId: 'S0IDD0YGLZ',
+      appId: "JP2Q0HN2DE",
+      apiKey: "67f1a7e15197ecf88d4c85f39a2e1789",
+      indexName: "gotenberg",
+      contextualSearch: true,
+    },
+    announcementBar: {
+      id: "support_us",
+      content: `⭐️  &nbsp; Join our 15,000+ community members on  <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/5CKjNHF3es">Discord</a>! &nbsp; ⭐️`,
     },
     navbar: {
-      title: 'Uniswap Docs',
+      title: "Monopole Docs",
       logo: {
-        alt: 'Uniswap Unicorn',
-        src: 'img/uni_dark_icon.svg',
+        alt: "Monopole Logo",
+        src: "img/logo.png",
       },
+      hideOnScroll: false,
       items: [
         {
-          to: '/concepts/overview',
-          label: 'Concepts',
-          position: 'left',
-          className: 'V3_active',
+          type: "doc",
+          label: "Documentation",
+          docId: "introduction",
         },
         {
-          to: '/contracts/v3/overview',
-          label: 'Contracts',
-          position: 'left',
-          className: 'V3_active',
+          type: "search",
+          position: "right",
         },
         {
-          to: '/sdk/v3/overview',
-          label: 'SDKs',
-          position: 'left',
-          className: 'V3_active',
+          label: "Version 0.x",
+          to: "/docs/0.x/introduction",
+          position: "right",
         },
         {
-          to: '/api/subgraph/overview',
-          label: 'APIs',
-          position: 'left',
-          className: 'V3_active',
+          href: "https://discord.gg/5CKjNHF3es",
+          label: "Help",
+          position: "right",
         },
         {
-          label: 'Give Feedback',
-          to: 'https://forms.gle/13XtjmkwdXQ2jMn26',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
-          label: 'Whitepaper',
-          to: 'https://uniswap.org/whitepaper-v3.pdf',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
-          href: 'https://github.com/uniswap/uniswap-docs',
-          label: 'GitHub',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
-          href: 'https://unigrants.org/',
-          label: 'Grants',
-          position: 'right',
-          className: 'persistent',
+          href: "https://github.com/Monopole-network",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      // style: "dark",
+      style: "dark",
+      logo: {
+        alt: "Monopole Logo",
+        src: "img/logo.png",
+        href: "https://github.com/Monopole-network",
+      },
       links: [
         {
-          title: 'Developers',
+          title: "Documentation",
           items: [
             {
-              label: 'Feedback',
-              href: 'https://forms.gle/13XtjmkwdXQ2jMn26',
+              label: "Protocol",
+              to: "/docs/protocol/live-demo",
             },
             {
-              label: 'Bug Bounty',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/bug-bounty.md',
+              label: "Modules",
+              to: "/docs/modules/api",
             },
             {
-              label: '#dev-chat',
-              href: 'https://discord.gg/ybKVQUWb4s',
-            },
-            {
-              label: 'Whitepaper',
-              href: 'https://uniswap.org/whitepaper-v3.pdf',
+              label: "Customize",
+              to: "/docs/customize/ownership",
             },
           ],
         },
         {
-          title: 'Github',
+          title: "More",
           items: [
             {
-              label: 'uniswap-v3-core',
-              href: 'https://github.com/Uniswap/uniswap-v3-core',
+              label: "Follow @monopole_mnpl on twitter",
+              href: "https://twitter.com/monopole_mnpl",
             },
             {
-              label: 'uniswap-v3-sdk',
-              href: 'https://github.com/Uniswap/uniswap-v3-sdk',
+              label: "Help",
+              href: "https://discord.gg/5CKjNHF3es",
             },
             {
-              label: 'uniswap-v3-periphery',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery',
-            },
-            {
-              label: 'Deployment addresses',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/deploys.md',
+              label: "GitHub",
+              href: "https://github.com/Monopole-network",
             },
           ],
         },
         {
-          title: 'Ecosystem',
+          title: "Links",
           items: [
             {
-              label: 'Home',
-              href: 'https://uniswap.org/',
+              label: "Landing Page",
+              href: "https://monopole.network/",
             },
             {
-              label: 'App',
-              href: 'https://app.uniswap.org/',
-            },
-            {
-              label: 'Analytics',
-              href: 'https://info.uniswap.org/home',
-            },
-            {
-              label: 'Token Lists',
-              href: 'https://tokenlists.org/',
-            },
-            {
-              label: 'Brand Assets',
-              href: 'https://uniswap.org/Uniswap_brand_assets.zip',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Governance',
-              href: 'https://gov.uniswap.org/',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/ybKVQUWb4s',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/Uniswap',
-            },
-            {
-              label: 'Blog',
-              href: 'https://uniswap.org/blog/',
+              label: "Web App",
+              href: "https://app.monopole.network/",
             },
           ],
         },
       ],
-      // copyright: `unlicensed`,
+      copyright: `Copyright © ${new Date().getFullYear()} Monopole.<br /> `, //Built with <a href="https://docusaurus.io" target="_blank">Docusaurus</a>.
+    },
+    prism: {
+      theme: lightCodeTheme,
+      additionalLanguages: ["solidity", "php", "csharp", "powershell"],
     },
     colorMode: {
       // "light" | "dark"
-      defaultMode: 'dark',
+      defaultMode: "light",
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: false,
+      disableSwitch: true,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          id: 'contracts',
-          path: 'docs/contracts',
-          routeBasePath: 'contracts/',
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
-          editUrl: 'https://github.com/uniswap/uniswap-docs/tree/main/',
-          includeCurrentVersion: true,
-        },
-        blog: {
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
-          path: 'blog/',
-          blogTitle: 'Engineering Blog',
-          blogSidebarCount: 0,
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl:
+            "https://github.com/Monopole-network/monopole-docs/edit/main/",
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: "1.x",
+              path: "",
+            },
+            "0.x": {
+              label: "0.x",
+              path: "0.x",
+              banner: "unmaintained",
+            },
+          },
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-          customCss2: require.resolve('./src/css/colors.css'),
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+        gtag: {
+          trackingID: "G-Q1MDM8KFVG",
         },
       },
     ],
   ],
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
-  ],
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'sdk',
-        path: 'docs/sdk',
-        routeBasePath: 'sdk',
-        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
-        includeCurrentVersion: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'api',
-        path: 'docs/api',
-        routeBasePath: 'api/',
-        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
-        includeCurrentVersion: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'concepts',
-        path: 'docs/concepts',
-        routeBasePath: 'concepts/',
-        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
-        includeCurrentVersion: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        createRedirects(existingPath) {
-          // V3 Redirects
-          if (existingPath.includes('/concepts/overview')) {
-            return [existingPath.replace('/concepts/overview', '/protocol/introduction')]
-          }
-          if (existingPath.includes('/contracts/v3/reference')) {
-            return [existingPath.replace('/contracts/v3/reference', '/protocol/reference')]
-          }
-          if (existingPath.includes('/contracts/v3/guides')) {
-            return [existingPath.replace('/contracts/v3/guides', '/protocol/guides')]
-          }
-          // V2 Redirects
-          if (existingPath.includes('/contracts/v2/reference')) {
-            return [existingPath.replace('/contracts/v2/reference', '/protocol/V2/reference')]
-          }
-          if (existingPath.includes('/contracts/v2/guides')) {
-            return [existingPath.replace('/contracts/v2/guides', '/protocol/V2/guides')]
-          }
-          // Permit2 Redirects
-          if (existingPath.includes('/contracts/permit2')) {
-            return [existingPath.replace('/contracts/permit2', '/protocol/permit2')]
-          }
-          // v3-sdk Redirects
-          if (existingPath.includes('/sdk/v3/overview')) {
-            return [existingPath.replace('/sdk/v3/overview', '/sdk/introduction')]
-          }
-          if (existingPath.includes('/sdk/v3/guides')) {
-            return [existingPath.replace('/sdk/v3/guides', '/sdk/guides')]
-          }
-          // swap-widgets Redirects
-          if (existingPath.includes('/sdk/swap-widget/overview')) {
-            return [existingPath.replace('/sdk/swap-widget/overview', '/sdk/widgets/swap-widget')]
-          }
-          if (existingPath.includes('/sdk/swap-widget/reference/v2')) {
-            return [existingPath.replace('/sdk/swap-widget/reference/v2', '/sdk/widgets/swap-widget/api')]
-          }
-
-          // Return a falsy value: no redirect created
-          return undefined
-        },
-      },
-    ],
-  ],
-}
+  plugins: ["@docusaurus/plugin-ideal-image"],
+};
