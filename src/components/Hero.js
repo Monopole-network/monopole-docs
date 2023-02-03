@@ -27,7 +27,7 @@ export default function Hero() {
               )}
               to="/docs/introduction"
             >
-              Protocol
+              Get Started
             </Link>
             <Link
               className={clsx(

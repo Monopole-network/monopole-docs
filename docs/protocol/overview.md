@@ -1,7 +1,25 @@
 ---
-id: live-demo
-title: 🔥 Live Demo
+id: overview
+title: Overview
 ---
+
+
+
+
+
+
+<p align="center">
+    <img src={../../static/img/ProtocolOverview.png} alt="Protocol Overview" width="150" height="150" />
+</p>
+
+
+
+
+
+
+
+
+
 
 Before pulling the Docker image, you may want to test Gotenberg first. For this purpose, we provide a demo
 API:

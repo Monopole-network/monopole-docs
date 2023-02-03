@@ -71,15 +71,15 @@ module.exports = {
           items: [
             {
               label: "Protocol",
-              to: "/docs/protocol/live-demo",
+              to: "/docs/protocol/overview",
             },
             {
-              label: "Modules",
-              to: "/docs/modules/api",
+              label: "Smart Contracts",
+              to: "/docs/smart-contracts/overview",
             },
             {
-              label: "Customize",
-              to: "/docs/customize/ownership",
+              label: "API",
+              to: "/docs/api/overview",
             },
           ],
         },

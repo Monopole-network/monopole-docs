@@ -6,6 +6,8 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 :root {
   --ifm-color-primary: #8733f9;
   --ifm-color-primary-dark: #5822a5;
@@ -20,6 +22,8 @@
   --ifm-background-surface-color: #fffafd;
   --ifm-footer-link-color: white;
   --ifm-footer-link-hover-color: white;
+
+  --ifm-font-family-base: "Montserrat";
 
   --docusaurus-highlighted-code-line-bg: rgb(204, 204, 204);
 }

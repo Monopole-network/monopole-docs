@@ -1,6 +1,6 @@
 ---
-id: docker
-title: Docker
+id: fees
+title: Fees
 ---
 
 Gotenberg is available as a Docker image for **amd64**, **arm64**, **armhf**, and **i386** architectures.

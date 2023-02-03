@@ -1,6 +1,6 @@
 ---
-id: kubernetes
-title: Kubernetes
+id: crosschain
+title: Cross-chain
 ---
 
 The Docker image uses a dedicated non-root user called `gotenberg` with `uid` and `gid` **1001**.
