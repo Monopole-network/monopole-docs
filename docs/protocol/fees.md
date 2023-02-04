@@ -41,7 +41,7 @@ Lisitng price vary depending on the project and audit size
 
 ## Project Sale Fees
 
-A project can be listed on the [Studio](./studio) to raise funds and share revenue.
+A project can be listed on the Studio to raise funds and share revenue.
 
 Monopole takes a fee on the sale of the project (this percentage is fixed at the launch of the project):
 

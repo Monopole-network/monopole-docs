@@ -10,7 +10,7 @@
  */
 
 module.exports = {
-  "version-7.x": [
+  "version-1.x": [
     {
       type: "doc",
       id: "introduction",
@@ -24,15 +24,7 @@ module.exports = {
     {
       type: "category",
       label: " 📝 Smart Contracts",
-      items: [
-        "smart-contracts/overview",
-        "smart-contracts/chromium",
-        "smart-contracts/libreoffice",
-        "smart-contracts/webhook",
-        "smart-contracts/prometheus",
-        "smart-contracts/logging",
-        "smart-contracts/more",
-      ],
+      items: ["smart-contracts/overview", "smart-contracts/deployments"],
     },
     {
       type: "category",
