@@ -14,7 +14,7 @@ Fees may be changed in the future
 ## Project Listing Fees
 
 
-A project can be listed on the [Studio](./studio) to increase its visibility and prove its positive impact.
+A project can be listed on the Studio to increase its visibility and prove its positive impact.
 
 
 To carry out the audit on this project, Monopole takes a lisitng fee:
