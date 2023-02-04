@@ -19,13 +19,7 @@ module.exports = {
     {
       type: "category",
       label: " 🧬 The Protocol",
-      items: [
-        "protocol/overview",
-        "protocol/fees",
-        "protocol/docker-compose",
-        "protocol/crosschain",
-        "protocol/cloud-run",
-      ],
+      items: ["protocol/overview", "protocol/crosschain", "protocol/fees"],
     },
     {
       type: "category",
@@ -43,7 +37,12 @@ module.exports = {
     {
       type: "category",
       label: " ⚙️ API",
-      items: ["api/overview", "api/more"],
+      items: ["api/overview", "api/metadata"],
+    },
+    {
+      type: "doc",
+      id: "links",
+      label: " 🖇 Links",
     },
     {
       type: "link",

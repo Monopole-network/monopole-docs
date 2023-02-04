@@ -3,38 +3,14 @@ id: crosschain
 title: Cross-chain
 ---
 
-The Docker image uses a dedicated non-root user called `gotenberg` with `uid` and `gid` **1001**.
+Monopole is open to all blockchains to allow projects to choose their favorite blockchain.
 
-In the deployment specification of the pod, don't forget to add:
+|  | Ethereum | BNB Chain | Polygon | Avalanche | Elrond |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| MNPL Token | 🔁 | 🔁 | 🔁 | 🔁 | ⚠️ |
+| The Protocol | ✅ | ✅ | ✅ | 🔁 | ⚠️ |
+| Interface | ✅ | ✅ | ✅ | ✅ | ⚠️ |
 
-```yaml
-securityContext:
-  privileged: false
-  runAsUser: 1001
-```
-
-:::caution
-
-Make sure to provide enough memory and CPU requests (for instance, `512Mi` and `0.2` CPU).
-
-:::
-
-:::caution
-
-Do not redefine the entrypoint, but override the command instead. See this 
-[issue](https://github.com/gotenberg/gotenberg/issues/480#issuecomment-1232064017) for more details.
-
-:::
-
-:::tip
-
-The more resources you grant to the pod, the more responsive the API will be.
-
-:::
-
-:::danger
-
-We don't recommend exposing your instances to the external world. In terms of security, you should consider Gotenberg
-as a database.
-
-:::
+⚠️ Not ready to deploy but in development
+🔁 Not deployed but ready
+✅ Deployed

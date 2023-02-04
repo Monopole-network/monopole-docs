@@ -3,66 +3,61 @@ id: fees
 title: Fees
 ---
 
-Gotenberg is available as a Docker image for **amd64**, **arm64**, **armhf**, and **i386** architectures.
+Monopole takes fees on certain products, it is important to be transparent and to share all our returns
 
 :::info
 
-If you haven't, install [Docker](https://docs.docker.com/get-docker/) first. 
+Fees may be changed in the future
 
 :::
 
-## Quick Start
+## Project Listing Fees
 
-To start a default Docker container of Gotenberg, run:
 
-```
-docker run --rm -p 3000:3000 gotenberg/gotenberg:7
-```
+A project can be listed on the [Studio](./studio) to increase its visibility and prove its positive impact.
 
-Alternatively, using the historic Docker repository from our sponsor [TheCodingMachine](https://www.thecodingmachine.com):
 
-```
-docker run --rm -p 3000:3000 thecodingmachine/gotenberg:7
-```
+To carry out the audit on this project, Monopole takes a lisitng fee:
 
-:::tip
+#### 50% of listing price in MNPL:
+- **25%**: automatically burned
+- **25%**: goes to Monopole, if the project does not pass the audit this amount is refunded
 
-The API will be available at [http://localhost:3000](http://localhost:3000).
+#### 50% of listing price in Stablecoin:
+- **25%**: goes to Monopole
+- **25%**: goes to Monopole, if the project does not pass the audit this amount is refunded
 
-:::
+:::success
 
-:::danger
-
-We don't recommend exposing your instances to the external world. In terms of security, you should consider Gotenberg 
-as a database.
+**25% of the listing price in MNPL is automatically burned**, even if the project does not pass the audit
 
 :::
 
-## Modules' Properties
+:::note
 
-In the [Modules](../modules/api) chapters, we detail the many properties provided by Gotenberg's modules.
-
-You must set these properties using flags (i.e., `--my-property`). 
-
-For instance:
-
-```
-docker run --rm -p 3000:3000 gotenberg/gotenberg:7 \
-       gotenberg \
-       --my-property=foo
-```
-
-:::caution
-
-Do not redefine the entrypoint, but override the command instead. See this
-[issue](https://github.com/gotenberg/gotenberg/issues/480#issuecomment-1232064017) for more details.
+Lisitng price vary depending on the project and audit size
 
 :::
 
-## Update
+## Project Sale Fees
 
-To update your local Docker image of Gotenberg to the latest version, run:
+A project can be listed on the [Studio](./studio) to raise funds and share revenue.
 
-```
-docker pull gotenberg/gotenberg:7
-```
+Monopole takes a fee on the sale of the project (this percentage is fixed at the launch of the project):
+
+- 25% of fees are swaped to MNPL and burned*
+- 75% of fees goes to Monopole
+
+:::info
+
+*These fees are not converted and destroyed directly, Monopole team chooses the date of conversion and burn
+
+:::
+
+## Other Earned Fees
+
+Monopole may take fees on all integrated products, here is a list of services that may contain fees:
+
+- Swap
+- Fiat conversion
+- Services

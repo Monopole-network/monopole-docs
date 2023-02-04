@@ -3,66 +3,36 @@ id: overview
 title: Overview
 ---
 
+Monopole supports Impact Projects to measure their profitable and sustainable performance in a reliable and decentralized process. We give users full visibility on innovations in a decentralised way.
+
+## Why Monopole?
+
+86% Impact investing startups fail to meet expectations from both sides
+
+### Investors
+
+- Are lost in the jungle & underserved in terms of experience
+
+- Challenging sourcing of actually sustainable projects
+
+- Limited transparency on projects’ impact & performance
+
+- Boring investment & monitoring process of project through project lifespan 
 
 
+### Impact entrepreneurs
+
+- Face funding gap & lack of visibility
+
+- Defective funding resources at launch & poor interface with investors throughout project lifecycle
+
+- Absence of smart opportunities to get value-adding advice & scale up
+
+- Restrained visibility, recognition and access to next gen tech leverages
 
 
+## Visual flow
 
-<p align="center">
-    <img src={../../static/img/ProtocolOverview.png} alt="Protocol Overview" width="150" height="150" />
-</p>
-
-
-
-
-
-
-
-
-
-
-Before pulling the Docker image, you may want to test Gotenberg first. For this purpose, we provide a demo
-API:
-
-* `https://demo.gotenberg.dev` - 🇪🇺 EU (Frankfurt)
-
-:::note
-
-**There is no UI**; it's an API entry point.
-
-:::
-
-:::tip
-
-The live demo uses a custom Gotenberg's Docker image built with the
-[GitHub template repository](https://github.com/gotenberg/gotenberg-template-repository) 👷.
-
-:::
-
-## Usage
-
-The following modules supplies routes you may want to explore first:
-
-* [Chromium](../modules/chromium)
-* [LibreOffice](../modules/libreoffice)
-
-While you're reading the documentation, open a terminal or [Postman](https://www.postman.com/) and test the routes 
-using the demo URL:
-
-For instance:
-
-```bash
-curl \
---request POST 'https://demo.gotenberg.dev/forms/chromium/convert/url' \
---form 'url="https://sparksuite.github.io/simple-html-invoice-template/"' \
--o my.pdf
-```
-
-## Limitations
-
-The demo runs on a [Render](https://render.com) instance with `512MB` of RAM and `0.5` CPU.
-
-Currently, the limitations are:
-
-* Two requests per second per IP.
-* `5MB` body limit.
+<div>
+    <img src="https://raw.githubusercontent.com/sinodevi/docs-1/main/static/img/protocol/ProtocolOverview.png" alt="Protocol Overview" width="60%"  />
+</div>
