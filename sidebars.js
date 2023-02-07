@@ -33,6 +33,7 @@ module.exports = {
           items: [
             "smart-contracts/interfaces/IERC20",
             "smart-contracts/interfaces/IERC165",
+            "smart-contracts/interfaces/IERC721",
             "smart-contracts/interfaces/IERC721Receiver",
           ],
         },
