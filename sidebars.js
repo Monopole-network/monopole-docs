@@ -24,7 +24,25 @@ module.exports = {
     {
       type: "category",
       label: " 📝 Smart Contracts",
-      items: ["smart-contracts/overview", "smart-contracts/deployments"],
+      items: [
+        "smart-contracts/overview",
+        "smart-contracts/MonopoleAllowlist",
+        {
+          type: "category",
+          label: "Interfaces",
+          items: [
+            "smart-contracts/interfaces/IERC20",
+            "smart-contracts/interfaces/IERC165",
+            "smart-contracts/interfaces/IERC721Receiver",
+          ],
+        },
+        {
+          type: "category",
+          label: "Libraries",
+          items: ["smart-contracts/libraries/TransferHelper"],
+        },
+        "smart-contracts/deployments",
+      ],
     },
     {
       type: "category",

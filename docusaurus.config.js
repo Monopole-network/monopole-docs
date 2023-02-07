@@ -117,8 +117,8 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Monopole.<br /> `, //Built with <a href="https://docusaurus.io" target="_blank">Docusaurus</a>.
     },
     prism: {
-      theme: lightCodeTheme,
-      additionalLanguages: ["solidity", "php", "csharp", "powershell"],
+      //theme: lightCodeTheme,
+      additionalLanguages: ["solidity"],
     },
     colorMode: {
       // "light" | "dark"

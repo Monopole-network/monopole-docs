@@ -45,8 +45,8 @@ A project can be listed on the Studio to raise funds and share revenue.
 
 Monopole takes a fee on the sale of the project (this percentage is fixed at the launch of the project):
 
-- 25% of fees are swaped to MNPL and burned*
-- 75% of fees goes to Monopole
+- **25%** of fees are swaped to MNPL and burned*
+- **75%** of fees goes to Monopole
 
 :::info
 
